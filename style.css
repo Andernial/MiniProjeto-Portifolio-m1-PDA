@@ -1,0 +1,823 @@
+@font-face {
+    font-family: "Press Start";
+    src: url(./fontes/PressStart2P-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Press Start";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.middle-banner {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.envelope1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Area-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./img/pordosol.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+}
+
+.sections {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.Area-banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+
+}
+
+.middle-banner {
+    padding-top: 8%;
+    position: relative;
+}
+
+.sections {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 2850px;
+    position: relative;
+    top: 720px;
+    background-color: rgba(5, 42, 87, 255);
+}
+
+.bio-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    box-shadow: 2px 2px 5px 0px black;
+
+
+}
+
+.box-bio1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px black;
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid;
+
+
+
+}
+
+.habilidades-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    box-shadow: 2px 2px 5px 0px black;
+    margin-top: 100px;
+
+}
+
+.box-habilidades {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px black;
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid;
+
+
+}
+
+.atividades-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    box-shadow: 2px 2px 5px 0px black;
+    margin-top: 100px;
+}
+
+.atividades-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.border-lista {
+    display: flex;
+    align-items: center;
+    border: 3px solid;
+    width: 90%;
+}
+
+.boxA1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px black;
+
+    border-radius: 10px;
+    width: 350px;
+    height: 560px;
+    border: 1px solid;
+
+}
+
+.boxA2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px black;
+    border-radius: 10px;
+    width: 350px;
+    height: 560px;
+    border: 1px solid;
+
+}
+
+.boxA3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px black;
+    border-radius: 10px;
+    width: 350px;
+    height: 560px;
+    border: 1px solid;
+
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 550px;
+    margin-top: 100px;
+
+}
+
+
+.card .boxA1 {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.back-card1 {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-card1 {
+    transform: rotateY(180deg);
+}
+
+.card:hover .boxA1 {
+    transform: rotateY(180deg);
+}
+
+.card3 .boxA3 {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+.back-card3 {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-card3 {
+    transform: rotateY(180deg);
+}
+
+.card3:hover .boxA3 {
+    transform: rotateY(180deg);
+}
+
+.card3 {
+    position: relative;
+    width: 340px;
+    height: 550px;
+    margin-top: 100px;
+
+}
+
+.card1 {
+    margin-top: 100px;
+    position: relative;
+    width: 340px;
+    height: 550px;
+}
+
+.card1 .boxA2 {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.front-card2,
+.back-card2 {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-card2 {
+    transform: rotateY(180deg);
+}
+
+.card1:hover .boxA2 {
+    transform: rotateY(180deg);
+}
+
+.end-site {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    margin-top: 200px;
+    height: 200px;
+    width: 100%;
+
+}
+
+.endtitle1 {
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+.endtitle2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 55px;
+}
+
+
+
+
+/* ids - estilização */
+#bio {
+    text-shadow: 3px 4px black;
+
+    color: rgba(205, 105, 107, 255);
+}
+
+.box-bio1>p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 35px;
+    border: 3px solid;
+    width: 95%;
+
+}
+
+#titulo-quem {
+    color: rgb(255, 255, 2);
+    text-shadow: 3px 4px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#habilidades {
+    text-shadow: 3px 4px black;
+
+    color: rgb(87, 220, 225);
+}
+
+#titulo-minhas {
+    color: rgb(91, 255, 2);
+    text-shadow: 3px 4px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.lista1 {
+    font-size: 18px;
+    line-height: 35px;
+    text-align: start;
+    width: 100%;
+    list-style: none;
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+}
+
+#atividades {
+    text-shadow: 3px 4px black;
+
+    color: crimson
+}
+
+#projetos {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#projetos2 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+#projetos3 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.front-card1>h1 {
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 3px 4px black;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.front-card1>p {
+    text-align: start;
+    color: black;
+    line-height: 23px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.front-card2>h1 {
+    text-align: center;
+    color: rgb(100, 172, 12);
+    text-shadow: 3px 4px black;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.front-card2>p {
+    text-align: start;
+    color: black;
+    line-height: 23px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.front-card3>h1 {
+    text-align: center;
+    color: rgb(226, 116, 43);
+    text-shadow: 3px 4px black;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.front-card3>p {
+    text-align: start;
+    color: black;
+    line-height: 23px;
+    font-size: 13px;
+    margin-left: 20px;
+
+}
+
+.back-card1>img {
+    width: 340px;
+    height: 520px;
+    border-radius: 10px;
+    border: 3px solid;
+}
+
+.back-card2>img {
+    width: 340px;
+    height: 520px;
+    border-radius: 10px;
+    border: 3px solid;
+}
+
+.back-card3>img {
+    width: 340px;
+    height: 520px;
+    border-radius: 10px;
+    border: 3px solid;
+}
+
+#titulo1 {
+
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+
+}
+
+#imagemiddle1 {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+}
+
+#titulo2 {
+
+    color: white;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
+#paragrafoimg {
+
+    color: white;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo>a {
+    text-decoration: none;
+}
+
+nav>a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+
+#a1:hover {
+    color: rgba(205, 105, 107, 255);
+    transition: 2s;
+}
+
+#a2:hover {
+    color: rgb(87, 220, 225);
+    transition: 2s;
+}
+
+#a3:hover {
+    color: crimson;
+    transition: 2s;
+}
+
+.options-menu>nav {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: gray;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .logo {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+    }
+
+    .sections {
+        height: 4100px;
+        top: 900px;
+
+    }
+
+    .options-menu>a {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .middle-page>p {
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #titulo2 {
+        font-size: 20px;
+    }
+
+    .box-bio1 {
+        width: 300px;
+
+    }
+
+    #titulo-quem {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    #biop {
+        font-size: 13px;
+        line-height: 23px;
+
+    }
+
+    .box-habilidades {
+        width: 300px;
+    }
+
+    #titulo-minhas {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .lista1 {
+        font-size: 13px;
+        line-height: 23px;
+        width: 75%;
+    }
+
+    .atividades-box {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxA1 {
+        width: 300px;
+        height: 550px;
+        margin-left: 20px;
+    }
+
+    .back-card1>img {
+        width: 300px;
+        height: 550px;
+    }
+
+    .boxA2 {
+        width: 300px;
+        height: 550px;
+        margin-left: 20px;
+    }
+
+    .back-card2>img {
+        width: 300px;
+        height: 550px;
+    }
+
+    .boxA3 {
+        width: 300px;
+        height: 550px;
+        margin-left: 20px;
+    }
+
+    .back-card3>img {
+        width: 300px;
+        height: 550px;
+    }
+
+    .end-site {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .endtitle1 {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .endtitle1>h1 {
+
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: 30px;
+
+    }
+
+    .endtitle1>p {
+        justify-content: center;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    .endtitle2>h1 {
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+
+    }
+
+    .endtitle1>p {
+        justify-content: center;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    #imagemiddle1 {
+        margin-top: 170px;
+    }
+
+    #paragrafoimg {
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+    .middle-banner {
+        padding-top: 0px;
+    }
+
+    #paragrafoimg {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #imagemiddle1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .atividades-box {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sections {
+        height: 3100px;
+        top: 900px;
+
+    }
+
+    .card1 {
+        width: auto;
+        height: auto;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+
+    .card3 {
+        width: auto;
+        height: auto;
+    }
+
+    .boxA1 {
+        width: 600px;
+        height: 325px;
+        
+    }
+
+    .back-card1>img {
+        width: 600px;
+        height: 325px;
+    }
+
+    .boxA2 {
+        width: 600px;
+        height: 325px;
+
+    }
+
+    .back-card2>img {
+        width: 600px;
+        height: 325px;
+    }
+
+    .boxA3 {
+        width: 600px;
+        height: 325px;
+        
+    }
+
+    .back-card3>img {
+        width: 600px;
+        height: 325px;
+    }
+
+    nav {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .endtitle1 {
+        margin-right: 100px;
+    }
+
+    .box-bio1 {
+        width: 500px;
+        height: 300px;
+    }
+
+
+    #biop {
+        font-size: 13px;
+        line-height: 23px;
+
+    }
+
+    .box-habilidades {
+        width: 500px;
+        height: 320px;
+    }
+
+    #titulo-minhas {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .lista1 {
+        font-size: 13px;
+        line-height: 23px;
+        width: 75%;
+    }
+}
