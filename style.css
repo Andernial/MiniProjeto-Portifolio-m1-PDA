@@ -518,17 +518,17 @@ nav>a {
 
 #a1:hover {
     color: rgba(205, 105, 107, 255);
-    transition: 2s;
+    transition: 1s;
 }
 
 #a2:hover {
     color: rgb(87, 220, 225);
-    transition: 2s;
+    transition: 1s;
 }
 
 #a3:hover {
     color: crimson;
-    transition: 2s;
+    transition: 1s;
 }
 
 .options-menu>nav {
